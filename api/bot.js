@@ -1,7 +1,7 @@
 const { Telegraf } = require('telegraf');
 const fetch = require('node-fetch');
 
-const bot = new Telegraf(process.env.7259089235:AAEfFRC5IrtNL8EJoXB1SJfAaw0J9UjLx18);
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 const games = {
     1: {
