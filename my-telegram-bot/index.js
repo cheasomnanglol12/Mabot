@@ -171,7 +171,7 @@ const generateUUID = () => {
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const delayRandom = () => Math.random() / 3 + 1;
 
-module.exports = (req, res) => {
-    bot.handleUpdate(req.body);
+module.exports = async (req, res) => {
+    await bot.handleUpdate(req.body);
     res.status(200).send('OK');
 };
